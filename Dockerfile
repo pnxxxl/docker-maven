@@ -11,5 +11,5 @@ COPY . .
 RUN mvn clean install
 
 # Команда запуска приложения
-CMD ["java", "-cp", "target/docker_maven-1.0-SNAPSHOT.jar", "App"]
+ENTRYPOINT ["java", "-cp", "target/docker_maven-1.0-SNAPSHOT.jar", "App"]
     
